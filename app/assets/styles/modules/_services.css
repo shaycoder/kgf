@@ -1,0 +1,17 @@
+.services {
+    @mixin atMedium {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.services > div img {
+    border-radius: 7%;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

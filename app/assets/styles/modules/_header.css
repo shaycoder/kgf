@@ -1,0 +1,29 @@
+.site-header {
+    display: none;
+    @mixin atMedium {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000;
+        padding: 30px 0;
+        color: #FFF;
+        border-bottom: .1rem solid $mainOrange;
+    }
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.site-header a {
+    color: #FFF;
+    text-decoration: none;  
+    display: inline-block;
+    padding-right: 30px;
+}

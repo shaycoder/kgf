@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KGF Gold & Diamond</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <script src="https://kit.fontawesome.com/0febe8b076.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <img src="assets/images/icons/clear-view-escapes.svg">
-        <a href="#">Contact us</a>
+    <header class="site-header">
+        <img src="assets/images/logo.png" width="200px">
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -19,122 +20,194 @@
                 <li><a href="#account">Account</a></li>
             </ul>
         </nav>
+        <a href="#" class="btn">Contact us</a>
     </header>
 
     <!-- Top Section -->
-    <section id="slider">
-
-    </section>
-
-    <!-- Products -->
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-item">
-            <img src="assets/images/product-1.jpg">
-            <h3>GOLD BAR 1 KGS (1000 GMS)</h3>
-        </div>
-        <div class="product-item">
-            <img src="assets/images/product-2.jpg">
-            <h3>10 TOLA GOLD BAR (TT BAR)</h3>
-        </div>
-        <div class="product-item">
-            <img src="assets/images/product-3.jpg">
-            <h3>SILVER BARS</h3>
-        </div>
-        <div class="product-item">
-            <img src="assets/images/product-4.jpg">
-            <h3>MINTING</h3>
-        </div>
-        <div class="product-item">
-            <img src="assets/images/product-5.jpg">
-            <h3>SMELTING</h3>
-        </div>
-        <div class="product-item">
-            <img src="assets/images/product-6.jpg">
-            <h3>GOLD GRAINS</h3>
-        </div>
+    <section class="slideshow">
+        <div class="slideshow-inner">
+          <div class="slides">
+            <div class="slide is-active ">
+              <div class="slide-content">
+                <div class="caption">
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div class="image-container"> 
+                <img src="assets/images/slider-1.jpg" alt="" class="image" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-content">
+                <div class="caption">
+                  <div class="title"></div>
+                </div>
+              </div>
+              <div class="image-container">
+                <img src="assets/images/slider-2.jpg" alt="" class="image" />
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <div class="item is-active"> 
+              <span class="icon">1</span>
+            </div>
+            <div class="item">
+              <span class="icon">2</span>
+            </div>
+          </div>
+          <div class="arrows">
+            <div class="arrow prev">
+              <span class="svg svg-arrow-left">
+                <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                <span class="alt sr-only"></span>
+              </span>
+            </div>
+            <div class="arrow next">
+              <span class="svg svg-arrow-right">
+                <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                <span class="alt sr-only"></span>
+              </span>
+            </div>
+          </div>
+        </div> 
     </section>
 
     <!-- About Us -->
     <section id="about">
-        <div>
-            <h2>About us</h2>
-            <p>History & Development</p>
-            <p>Since 2010 we were buying dore/scrap gold bars from African counties and sale in Dubai local market, With increasing customers appreciation we ventured in the Local Dubai Market with the humble beginning in 2014, MG GLOBAL BULLION LLC was incorporated with office at Hakim Building situated at Deira’s famous gold souk, Dubai with a focus on retail / wholesale bullion trading. From that time we undertook transactions and trading with major local bullion traders and manufacturers directly. As retailer / wholesaler we quickly earned our customers’ and suppliers’ trust, which we consider as our key asset in our hearts and can proudly claim to have kept that trust intact until today. This has provided our company a solid foundation for future growth and business development and soon we have emerged as leaders with renowned reputation in the precious metals sector of the Middle East.</p>
-            <a href="#">Read More</a>
+        <div class="wrapper">
+            <h2 class="about-heading">About us</h2>
+            <div class="about">
+                
+                <div class="about__img">
+                    <img src="assets/images/about.png" alt="Gold image">
+                </div>
+                <div class="about__desc">
+                    <h3>History & Development</h3>
+                    <p>Since 2010 we were buying dore/scrap gold bars from African counties and sale in Dubai local market, With increasing customers appreciation we ventured in the Local Dubai Market with the humble beginning in 2014, MG GLOBAL BULLION LLC was incorporated with office at Hakim Building situated at Deira’s famous gold souk, Dubai with a focus on retail / wholesale bullion trading. From that time we undertook transactions and trading with major local bullion traders and manufacturers directly. As retailer / wholesaler we quickly earned our customers’ and suppliers’ trust, which we consider as our key asset in our hearts and can proudly claim to have kept that trust intact until today. This has provided our company a solid foundation for future growth and business development and soon we have emerged as leaders with renowned reputation in the precious metals sector of the Middle East.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="assets/images/about.png">
+    </section>
+
+    <!-- Products -->
+    <section id="products">
+        <div class="wrapper">
+            <h2 class="products__heading">Our Products</h2>
+            <div class="products">
+                <div class="product-item">
+                    <img src="assets/images/product-1.jpg">
+                    <h3>GOLD BAR 1 KGS (1000 GMS)</h3>
+                </div>
+                <div class="product-item">
+                    <img src="assets/images/product-2.jpg">
+                    <h3>10 TOLA GOLD BAR (TT BAR)</h3>
+                </div>
+                <div class="product-item">
+                    <img src="assets/images/product-3.jpg">
+                    <h3>SILVER BARS</h3>
+                </div>
+                <div class="product-item">
+                    <img src="assets/images/product-4.jpg">
+                    <h3>MINTING</h3>
+                </div>
+                <div class="product-item">
+                    <img src="assets/images/product-5.jpg">
+                    <h3>SMELTING</h3>
+                </div>
+                <div class="product-item">
+                    <img src="assets/images/product-6.jpg">
+                    <h3>GOLD GRAINS</h3>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Mission/Vision/Culture -->
     <section id="mvc">
-        <div>
-            <img src="assets/images/icons/rain.svg">
-            <h3>Mission</h3>
-            <p>Perceiving customer needs at utmost level by providing them flexibility in sourcing, competitive prices, on-time deliveries and customized solutions for unique needs</p>
-        </div>
-        <div>
-            <img src="assets/images/icons/rain.svg">
-            <h3>Vision</h3>
-            <p>Perceiving customer needs at utmost level by providing them flexibility in sourcing, competitive prices, on-time deliveries and customized solutions for unique needs</p>
-        </div>
-        <div>
-            <img src="assets/images/icons/rain.svg">
-            <h3>Company Culture</h3>
-            <p>Perceiving customer needs at utmost level by providing them flexibility in sourcing, competitive prices, on-time deliveries and customized solutions for unique needs</p>
+        <div class="wrapper">
+            <div class="mvc">
+                <div>
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Mission</h3>
+                    <p>Perceiving customer needs at utmost level by providing them flexibility in sourcing, competitive prices, on-time deliveries and customized solutions for unique needs</p>
+                </div>
+                <div>
+                    <i class="fa-regular fa-sun"></i>
+                    <h3>Vision</h3>
+                    <p>Keeping our name synonymous with reliability, customer satisfaction and innovation.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3>Company Culture</h3>
+                    <p>Company culture is an integral part of business. It affects nearly every aspect of a company. From recruiting top talent to improving employee satisfaction, it’s the backbone of a happy workforce.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services -->
     <section id="services">
-        <h2>Our Services</h2>
-        <div>
-            <img src="assets/images/services-1.jpg">
-            <h3>Refining</h3>
-        </div>
-        <div>
-            <img src="assets/images/services-2.jpg">
-            <h3>Assaying</h3>
-        </div>
-        <div>
-            <img src="assets/images/services-3.jpg">
-            <h3>Smelting</h3>
-        </div>
-        <div>
-            <img src="assets/images/services-4.jpg">
-            <h3>Minting</h3>
-        </div>
-        <div>
-            <img src="assets/images/services-5.jpg">
-            <h3>Wholesale</h3>
+        <div class="wrapper">
+            <h2 class="services__heading">Our Services</h2>
+            <div class="services">
+                <div class="service-item">
+                    <img src="assets/images/services-1.jpg">
+                    <h3>Refining</h3>
+                </div>
+                <div class="service-item">
+                    <img src="assets/images/services-2.jpg">
+                    <h3>Assaying</h3>
+                </div>
+                <div class="service-item">
+                    <img src="assets/images/services-3.jpg">
+                    <h3>Smelting</h3>
+                </div>
+                <div class="service-item">
+                    <img src="assets/images/services-4.jpg">
+                    <h3>Minting</h3>
+                </div>
+                <div class="service-item">
+                    <img src="assets/images/services-5.jpg">
+                    <h3>Wholesale</h3>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div>
-            <p>
-                KGF Gold & Diamond, <br>
-                4th Floor, Office No. 21, <br>
-                Al Shamsi Building, <br>
-                Above Mignas Jewellers, <br>
-                Gold Souk Deira, <br>
-                DUBAI U.A.E.
-            </p>
+        <div class="wrapper">
+            <div class="footer">
+                <div>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <p>
+                        KGF Gold & Diamond, <br>
+                        4th Floor, Office No. 21, <br>
+                        Al Shamsi Building, <br>
+                        Above Mignas Jewellers, <br>
+                        Gold Souk Deira, <br>
+                        DUBAI U.A.E.
+                    </p>
+                </div>
+                <div>
+                    <span><i class="fa-solid fa-mobile"></i></span>
+                    <p>
+                        +971 4 2267754 <br>
+                        +971 52 828 6407
+                    </p>
+                </div>
+                <div>
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <p>kgf@gmail.com</p>
+                </div>              
+            </div>
         </div>
-        <div>
-            <p>
-                +971 4 2267754 <br>
-                +971 52 828 6407
-            </p>
-        </div>
-        <div>
-            <p>kgf@gmail.com</p>
-        </div>
-        <p>Copyright &copy; 2019 All Rights Reserved by <a href="#">KGF Gold & Diamond</a></p>
+        <p class="footer-text">Copyright &copy; 2019 All Rights Reserved by <a href="#">KGF Gold & Diamond</a></p>
     </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
     <script src="bundled.js"></script>
 </body>
 </html>

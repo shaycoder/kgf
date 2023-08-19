@@ -1,0 +1,21 @@
+footer {
+    background-color: $mainOrange;
+    color: #FFF;
+}
+
+.footer {
+    @mixin atMedium {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.footer-text {
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .fa-solid, footer .fa-regular {
+    font-size: 2rem;
+}
