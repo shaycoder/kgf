@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+img {
+    /* Avoids horizontal scroll for larger image */
+    max-width: 100%; 
+    height: auto;
+    /* Avoids horizontal scroll for larger image */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: $mainOrange;
+}
