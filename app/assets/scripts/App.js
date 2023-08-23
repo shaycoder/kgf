@@ -1,4 +1,9 @@
 import '../styles/styles.css';
+import RevealOnScroll from './modules/ReavealOnScroll';
+import MobileMenu from './modules/MobileMenu';
+
+let mobileMenu = new MobileMenu();
+let revealOnScroll = new RevealOnScroll();
 
 if(module.hot) {
     module.hot.accept()

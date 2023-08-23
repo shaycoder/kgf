@@ -3,4 +3,9 @@ h2 {
     font-weight: 700;
     color: $mainOrange;
     text-align: center;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.4rem;
 }

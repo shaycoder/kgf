@@ -1,17 +1,33 @@
 .services {
     @mixin atMedium {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
 }
 
 .services > div img {
-    border-radius: 7%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .service-item {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    text-align: center;
+    img {
+        opacity: 1;
+        transition: opacity .3s ease-out;
+    }
+}
+
+.service-item:hover {
+    h3 {
+        color: $mainOrange;
+    }
+    img {
+        opacity: 0.6;
+        background-color: $mainOrange;
+    }
 }

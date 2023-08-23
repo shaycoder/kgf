@@ -5,22 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KGF Gold & Diamond</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <script src="https://kit.fontawesome.com/0febe8b076.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header -->
     <header class="site-header">
-        <img src="assets/images/logo.png" width="200px">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#account">Account</a></li>
-            </ul>
-        </nav>
-        <a href="#" class="btn">Contact us</a>
+        <div class="site-header__logo">
+            <img src="assets/images/logo.png" alt="KGF Logo">
+        </div>
+        <div class="site-header__menu-content">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#account">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="site-header__btn">
+            <a href="#" class="btn">Contact us</a>
+        </div>
+        <div class="site-header__menu-icon">
+            <div class="site-header__menu-icon__middle"></div>
+        </div>
     </header>
 
     <!-- Top Section -->
@@ -73,14 +94,17 @@
         </div> 
     </section>
 
+    <section class="slide-image">
+        <img src="assets/images/slider-1.jpg" alt="Gold image">
+    </section>
+
     <!-- About Us -->
     <section id="about">
         <div class="wrapper">
             <h2 class="about-heading">About us</h2>
             <div class="about">
-                
-                <div class="about__img">
-                    <img src="assets/images/about.png" alt="Gold image">
+                <div class="about__img fade-in-image">
+                    <img src="assets/images/about.jpg" alt="cabin showing Kgf office">
                 </div>
                 <div class="about__desc">
                     <h3>History & Development</h3>
@@ -91,57 +115,57 @@
         </div>
     </section>
 
-    <!-- Products -->
-    <section id="products">
+    <!-- Mission/Vision/Culture -->
+    <section id="mvc">
         <div class="wrapper">
-            <h2 class="products__heading">Our Products</h2>
-            <div class="products">
-                <div class="product-item">
-                    <img src="assets/images/product-1.jpg">
-                    <h3>GOLD BAR 1 KGS (1000 GMS)</h3>
+            <div class="mvc">
+                <div class="mvc-item">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>Mission</h3>
+                    <p>Perceiving customer needs at utmost level by providing them flexibility in sourcing, competitive prices, on-time deliveries and customized solutions for unique needs</p>
                 </div>
-                <div class="product-item">
-                    <img src="assets/images/product-2.jpg">
-                    <h3>10 TOLA GOLD BAR (TT BAR)</h3>
+                <div class="mvc-item">
+                    <i class="fa-regular fa-sun"></i>
+                    <h3>Vision</h3>
+                    <p>Keeping our name synonymous with reliability, customer satisfaction and innovation.</p>
                 </div>
-                <div class="product-item">
-                    <img src="assets/images/product-3.jpg">
-                    <h3>SILVER BARS</h3>
-                </div>
-                <div class="product-item">
-                    <img src="assets/images/product-4.jpg">
-                    <h3>MINTING</h3>
-                </div>
-                <div class="product-item">
-                    <img src="assets/images/product-5.jpg">
-                    <h3>SMELTING</h3>
-                </div>
-                <div class="product-item">
-                    <img src="assets/images/product-6.jpg">
-                    <h3>GOLD GRAINS</h3>
+                <div class="mvc-item">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3>Company Culture</h3>
+                    <p>Company culture is an integral part of business. It affects nearly every aspect of a company. From recruiting top talent to improving employee satisfaction, it’s the backbone of a happy workforce.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission/Vision/Culture -->
-    <section id="mvc">
+    <!-- Products -->
+    <section id="products">
         <div class="wrapper">
-            <div class="mvc">
-                <div>
-                    <i class="fa-solid fa-rocket"></i>
-                    <h3>Mission</h3>
-                    <p>Perceiving customer needs at utmost level by providing them flexibility in sourcing, competitive prices, on-time deliveries and customized solutions for unique needs</p>
+            <h2 class="products__heading">Our Products</h2>
+            <div class="products">
+                <div class="product-item fade-in-image">
+                    <img src="assets/images/product-1.jpg">
+                    <h3>GOLD BAR 1 KGS (1000 GMS)</h3>
                 </div>
-                <div>
-                    <i class="fa-regular fa-sun"></i>
-                    <h3>Vision</h3>
-                    <p>Keeping our name synonymous with reliability, customer satisfaction and innovation.</p>
+                <div class="product-item fade-in-image">
+                    <img src="assets/images/product-2.jpg">
+                    <h3>10 TOLA GOLD BAR (TT BAR)</h3>
                 </div>
-                <div>
-                    <i class="fa-solid fa-hand-holding-heart"></i>
-                    <h3>Company Culture</h3>
-                    <p>Company culture is an integral part of business. It affects nearly every aspect of a company. From recruiting top talent to improving employee satisfaction, it’s the backbone of a happy workforce.</p>
+                <div class="product-item fade-in-image">
+                    <img src="assets/images/product-3.jpg">
+                    <h3>SILVER BARS</h3>
+                </div>
+                <div class="product-item fade-in-image">
+                    <img src="assets/images/product-4.jpg">
+                    <h3>MINTING</h3>
+                </div>
+                <div class="product-item fade-in-image">
+                    <img src="assets/images/product-5.jpg">
+                    <h3>SMELTING</h3>
+                </div>
+                <div class="product-item fade-in-image">
+                    <img src="assets/images/product-6.jpg">
+                    <h3>GOLD GRAINS</h3>
                 </div>
             </div>
         </div>
@@ -180,6 +204,9 @@
     <footer>
         <div class="wrapper">
             <div class="footer">
+                <div class="footer__logo">
+                    <img src="assets/images/logo-white.png" alt="KGF logo in the footer section">
+                </div>
                 <div>
                     <span><i class="fa-solid fa-location-dot"></i></span>
                     <p>

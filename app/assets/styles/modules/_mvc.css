@@ -7,23 +7,26 @@
     }
 }
 
-.mvc > div {
+.mvc-item {
     background-color: #000;
     padding: 20px 10px;
     margin-bottom: 2rem;
+    text-align: center;
     @mixin atMedium {
         flex: 1;
         padding: 40px 20px;
         margin-right: 2rem;
     }
+    transition: transform .3s ease-out;
+    border-radius: .7rem;
 }
 
 @mixin atMedium {
-    .mvc > div:last-child {
+    .mvc-item:last-child {
         margin-right: 0;
     }
 }
 
-.mvc > div i {
-    margin-bottom: 15px;
+.mvc-item:hover {
+    transform: scale(1.1);
 }
