@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Abel', sans-serif;
+    font-family: 'Futura', sans-serif;
     color: #333;
 }
 
@@ -16,6 +16,11 @@ img {
 
 * {
     box-sizing: border-box;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 a {
@@ -34,5 +39,11 @@ a {
     &--is-visible {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@mixin atMedium {
+    #about, #services, #products, #contact {
+        scroll-margin-top: 5rem;
     }
 }

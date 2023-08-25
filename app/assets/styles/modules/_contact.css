@@ -1,0 +1,54 @@
+#contact {
+    background: url('./assets/images/kgf-bg.jpg') no-repeat fixed center;
+    background-size: 100% 100%;
+    @mixin atMedium {
+        background-size: cover;
+    }
+}
+
+.contact {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        margin: .5rem;
+        width: 100%; 
+        @mixin atMedium {
+            width: 50%;
+        }
+
+        label {
+            padding: .75rem 0;
+            font-weight: 500;
+        }
+
+        &__input {
+            padding: .75rem 1.4rem;
+            outline: none;
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__btn {
+            padding: .75rem 1.4rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+            width: 50%;
+
+            @mixin atMedium {
+                width: 25%;
+            }
+        }
+    }
+}
+
+
+

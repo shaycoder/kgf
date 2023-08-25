@@ -5,17 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KGF Gold & Diamond</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
     <script src="https://kit.fontawesome.com/0febe8b076.js" crossorigin="anonymous"></script>
 </head>
@@ -28,17 +18,15 @@
         <div class="site-header__menu-content">
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#account">Account</a></li>
+                    <li><a class="menu-element" href="#home">Home</a></li>
+                    <li><a class="menu-element" href="#about">About us</a></li>
+                    <li><a class="menu-element" href="#services">Services</a></li>
+                    <li><a class="menu-element" href="#products">Products</a></li>
+                    <li><a class="btn menu-element" href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="site-header__btn">
-            <a href="#" class="btn">Contact us</a>
-        </div>
+        
         <div class="site-header__menu-icon">
             <div class="site-header__menu-icon__middle"></div>
         </div>
@@ -109,7 +97,7 @@
                 <div class="about__desc">
                     <h3>History & Development</h3>
                     <p>Since 2010 we were buying dore/scrap gold bars from African counties and sale in Dubai local market, With increasing customers appreciation we ventured in the Local Dubai Market with the humble beginning in 2014, MG GLOBAL BULLION LLC was incorporated with office at Hakim Building situated at Deira’s famous gold souk, Dubai with a focus on retail / wholesale bullion trading. From that time we undertook transactions and trading with major local bullion traders and manufacturers directly. As retailer / wholesaler we quickly earned our customers’ and suppliers’ trust, which we consider as our key asset in our hearts and can proudly claim to have kept that trust intact until today. This has provided our company a solid foundation for future growth and business development and soon we have emerged as leaders with renowned reputation in the precious metals sector of the Middle East.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <a href="#" class="btn about__desc--btn">Read More</a>
                 </div>
             </div>
         </div>
@@ -195,6 +183,34 @@
                 <div class="service-item">
                     <img src="assets/images/services-5.jpg">
                     <h3>Wholesale</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="contact">
+        <div class="wrapper">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <label>Your Name</label>
+                    <input type="text" class="contact-item__input" name="name">
+                </div>
+                <div class="contact-item">
+                    <label>Your Email</label>
+                    <input type="email" class="contact-item__input" name="email">
+                </div>
+                <div class="contact-item">
+                    <label>Your Phone No.</label>
+                    <input type="text" class="contact-item__input" name="phone">
+                </div>
+                <div class="contact-item">
+                    <label>Your Message</label>
+                    <textarea name="message" class="contact-item__input" rows="4"></textarea>
+                </div>
+                <div class="contact-item">
+                    <input type="submit" name="submit" class="btn contact-item__btn" value="Submit">
                 </div>
             </div>
         </div>

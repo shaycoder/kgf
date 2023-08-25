@@ -3,13 +3,6 @@
     color: #FFF;
     transition: background-color .5s ease-out;
 
-    &__btn {
-        display: none;
-        @mixin atMedium {
-            display: block;
-        }
-    }
-
     a {
         color: #FFF;
         text-decoration: none;  
@@ -127,8 +120,20 @@
             list-style: none;
         }
 
+        li:last-child {
+            background-color: #000;
+            margin-bottom: 20px;
+            @mixin atMedium {
+                margin-bottom: 0;
+            }
+        }
+
         a:hover {
             color: $mainOrange;
+        }
+
+        li a.btn:hover {
+            color: #FFF;
         }
     }
 
@@ -140,7 +145,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px 50px;
+        padding: 5px 50px;
         border-bottom: .3rem solid $mainOrange;
+        position: sticky;
+        top: 0;
+        z-index: 99;
     }
 }

@@ -6,6 +6,15 @@
 }
 
 .about {
+    &__desc {
+        p {
+            margin-bottom: 1.7rem;
+        }
+        &--btn {
+            width: 25%;
+            padding: 0.7rem 1rem;
+        }
+    }
     @mixin atMedium {
         display: flex;
         gap: 50px;
@@ -19,7 +28,10 @@
 
             p {
                 font-weight: 500;
-                margin-bottom: 2.5rem;
+                margin-bottom: 0;
+                @mixin atMedium {
+                    margin-bottom: 1.5rem;
+                }
             }
         }
 

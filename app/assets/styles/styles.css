@@ -6,10 +6,10 @@
 @import "modules/_btn";
 @import "modules/_wrapper";
 @import "modules/_headings";
-@import "modules/_generic-content";
 @import "modules/_slider";
 @import "modules/_about";
 @import "modules/_mvc";
 @import "modules/_products";
 @import "modules/_services";
+@import "modules/_contact";
 @import "modules/_footer";
