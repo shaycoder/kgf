@@ -13,6 +13,9 @@
         @mixin atMedium {
             padding-right: 30px;
             font-size: 1.2rem;
+            &.is-current-link {
+                color: $mainOrange;
+            }
         }
     }
     

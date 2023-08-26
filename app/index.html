@@ -18,10 +18,10 @@
         <div class="site-header__menu-content">
             <nav>
                 <ul>
-                    <li><a class="menu-element" href="#home">Home</a></li>
-                    <li><a class="menu-element" href="#about">About us</a></li>
-                    <li><a class="menu-element" href="#services">Services</a></li>
-                    <li><a class="menu-element" href="#products">Products</a></li>
+                    <li><a class="menu-element" href="#home" id="home-link">Home</a></li>
+                    <li><a class="menu-element" href="#about" id="about-link">About us</a></li>
+                    <li><a class="menu-element" href="#products" id="products-link">Products</a></li>
+                    <li><a class="menu-element" href="#services" id="services-link">Services</a></li>
                     <li><a class="btn menu-element" href="#contact">Contact Us</a></li>
                 </ul>
             </nav>
@@ -33,7 +33,7 @@
     </header>
 
     <!-- Top Section -->
-    <section class="slideshow">
+    <section class="slideshow page-section" data-matching-link="#home-link">
         <div class="slideshow-inner">
           <div class="slides">
             <div class="slide is-active ">
@@ -87,17 +87,18 @@
     </section>
 
     <!-- About Us -->
-    <section id="about">
+    <section id="about" class="page-section" data-matching-link="#about-link">
         <div class="wrapper">
             <h2 class="about-heading">About us</h2>
             <div class="about">
-                <div class="about__img fade-in-image">
+                <div class="about__img">
                     <img src="assets/images/about.jpg" alt="cabin showing Kgf office">
                 </div>
                 <div class="about__desc">
                     <h3>History & Development</h3>
-                    <p>Since 2010 we were buying dore/scrap gold bars from African counties and sale in Dubai local market, With increasing customers appreciation we ventured in the Local Dubai Market with the humble beginning in 2014, MG GLOBAL BULLION LLC was incorporated with office at Hakim Building situated at Deira’s famous gold souk, Dubai with a focus on retail / wholesale bullion trading. From that time we undertook transactions and trading with major local bullion traders and manufacturers directly. As retailer / wholesaler we quickly earned our customers’ and suppliers’ trust, which we consider as our key asset in our hearts and can proudly claim to have kept that trust intact until today. This has provided our company a solid foundation for future growth and business development and soon we have emerged as leaders with renowned reputation in the precious metals sector of the Middle East.</p>
-                    <a href="#" class="btn about__desc--btn">Read More</a>
+                    <p>A minimal Square Kuﬁc Calligraphy logo with the brand name "KGF" as writ- ten in Arabic Language . that gives clear attention to Arabic Tradition while company based in Arabic countries.</p>
+                    <p>The color Gold represents success, afﬂuence, and luxury. It evokes feelings of grandeur and sophistication. The shimmering metallic color has been used to symbolize abundance and accomplishment throughout history. Gold's ra- diant and alluring qualities make it a representation of riches and well-being. and Rich black is a classic choice for conveying professionalism and serious- ness. It can communicate that the brand takes its business seriously and is committed to delivering reliable and trustworthy solutions.</p>
+                    <!-- <a href="#" class="btn about__desc--btn">Read More</a> -->
                 </div>
             </div>
         </div>
@@ -127,31 +128,31 @@
     </section>
 
     <!-- Products -->
-    <section id="products">
+    <section id="products" class="page-section" data-matching-link="#products-link">
         <div class="wrapper">
             <h2 class="products__heading">Our Products</h2>
             <div class="products">
-                <div class="product-item fade-in-image">
+                <div class="product-item">
                     <img src="assets/images/product-1.jpg">
                     <h3>GOLD BAR 1 KGS (1000 GMS)</h3>
                 </div>
-                <div class="product-item fade-in-image">
+                <div class="product-item">
                     <img src="assets/images/product-2.jpg">
                     <h3>10 TOLA GOLD BAR (TT BAR)</h3>
                 </div>
-                <div class="product-item fade-in-image">
+                <div class="product-item">
                     <img src="assets/images/product-3.jpg">
                     <h3>SILVER BARS</h3>
                 </div>
-                <div class="product-item fade-in-image">
+                <div class="product-item">
                     <img src="assets/images/product-4.jpg">
                     <h3>MINTING</h3>
                 </div>
-                <div class="product-item fade-in-image">
+                <div class="product-item">
                     <img src="assets/images/product-5.jpg">
                     <h3>SMELTING</h3>
                 </div>
-                <div class="product-item fade-in-image">
+                <div class="product-item">
                     <img src="assets/images/product-6.jpg">
                     <h3>GOLD GRAINS</h3>
                 </div>
@@ -160,7 +161,7 @@
     </section>
 
     <!-- Services -->
-    <section id="services">
+    <section id="services" class="page-section" data-matching-link="#services-link">
         <div class="wrapper">
             <h2 class="services__heading">Our Services</h2>
             <div class="services">
@@ -192,27 +193,29 @@
     <section id="contact">
         <div class="wrapper">
             <h2>Contact Us</h2>
-            <div class="contact">
-                <div class="contact-item">
-                    <label>Your Name</label>
-                    <input type="text" class="contact-item__input" name="name">
+            <form action="cntc.php" method="POST">
+                <div class="contact">                
+                    <div class="contact-item">
+                        <label>Your Name</label>
+                        <input type="text" class="contact-item__input" name="name" required>
+                    </div>
+                    <div class="contact-item">
+                        <label>Your Email</label>
+                        <input type="email" class="contact-item__input" name="email" required>
+                    </div>
+                    <div class="contact-item">
+                        <label>Your Phone No.</label>
+                        <input type="text" class="contact-item__input" name="phone" required>
+                    </div>
+                    <div class="contact-item">
+                        <label>Your Message</label>
+                        <textarea name="message" class="contact-item__input" rows="4" required></textarea>
+                    </div>
+                    <div class="contact-item">
+                        <input type="submit" name="submit" class="btn contact-item__btn" value="Submit">
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <label>Your Email</label>
-                    <input type="email" class="contact-item__input" name="email">
-                </div>
-                <div class="contact-item">
-                    <label>Your Phone No.</label>
-                    <input type="text" class="contact-item__input" name="phone">
-                </div>
-                <div class="contact-item">
-                    <label>Your Message</label>
-                    <textarea name="message" class="contact-item__input" rows="4"></textarea>
-                </div>
-                <div class="contact-item">
-                    <input type="submit" name="submit" class="btn contact-item__btn" value="Submit">
-                </div>
-            </div>
+            </form>
         </div>
     </section>
 
@@ -237,7 +240,7 @@
                 <div>
                     <span><i class="fa-solid fa-mobile"></i></span>
                     <p>
-                        +971 4 2267754 <br>
+                        +971 42267754 <br>
                         +971 52 828 6407
                     </p>
                 </div>
