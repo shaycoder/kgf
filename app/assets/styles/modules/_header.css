@@ -8,10 +8,9 @@
         text-decoration: none;  
         display: inline-block;
         font-size: 1rem;
-        padding: 15px;
+        padding: 15px 24px;        
     
         @mixin atMedium {
-            padding-right: 30px;
             font-size: 1.2rem;
             &.is-current-link {
                 color: $mainOrange;

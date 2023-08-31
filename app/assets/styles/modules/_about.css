@@ -1,5 +1,4 @@
 .about-heading {
-    margin-top: 90px;
     @mixin atMedium {
         margin-top: 0;
     }
